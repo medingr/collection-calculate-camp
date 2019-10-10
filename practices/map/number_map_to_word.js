@@ -1,6 +1,13 @@
 'use strict';
 var number_map_to_word = function(collection){
-  return ['a','b','c','d','e'];
-};
+  return collection.map(getTranslatedWord);
 
+};
+var getTranslatedWord = function(num) {
+  for (var ret = '', a = 1, b = 26; (num -= a) >= 0; a = b, b *= 26) {
+    ret = (String.fromCharCode(parseInt((num % b) / a) + 65)).toLowerCase() + ret;
+    
+  }
+  return ret;
+}
 module.exports = number_map_to_word;

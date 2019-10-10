@@ -1,8 +1,14 @@
 'use strict';
 
 function grouping_count(collection) {
+  const resultSet = new Array;
+  [...new Set(collection)]
+  .map(
+      num => resultSet.push( toString(num) , 
+      collection.filter(y => y === num).length )
+  );
+  return resultSet;
 
-  //write code here
 }
 
 module.exports = grouping_count;

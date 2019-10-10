@@ -2,7 +2,8 @@
 
 function choose_common_elements(collection_a, collection_b) {
 
-  //write code here
+  const SameElements = collection_a.filter( n => collection_b.includes(n) );
+  return SameElements;
 }
 
 module.exports = choose_common_elements;
