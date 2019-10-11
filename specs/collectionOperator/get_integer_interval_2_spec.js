@@ -14,23 +14,23 @@ describe('get_integer_interval_2', function () {
   });
 
 
-  // it('', function() {
+  it('', function() {
 
-  //   var result = get_integer_interval_2(10, 1);
-  //   expect(result).toEqual(collection_b);
-  // });
+    var result = get_integer_interval_2(10, 1);
+    expect(result).toEqual(collection_b);
+  });
 
-  
-  // it('', function() {
+ 
+  it('', function() {
 
-  //   var result = get_integer_interval_2(10, 10);
-  //   expect(result).toEqual([10]);
-  // });
+    var result = get_integer_interval_2(10, 10);
+    expect(result).toEqual([10]);
+  });
 
-  // it('', function() {
+  it('', function() {
 
-  //   var result = get_integer_interval_2(5, 5);
-  //   expect(result).toEqual([]);
-  // });
+    var result = get_integer_interval_2(5, 5);
+    expect(result).toEqual([]);
+  });
 });
 

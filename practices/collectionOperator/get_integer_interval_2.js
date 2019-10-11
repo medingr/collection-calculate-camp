@@ -1,30 +1,16 @@
 'use strict';
 
 function get_integer_interval_2(number_a, number_b) {
-  //write code here
-  let iterator = 0;
-  let range = [];
 
-
-    // while ( iterator < number_b){
-    //   if (  number_a % 2 != 0 ){
-    //     number_a++;
-    //   }else{
-    //     number_a = number_a + 2;
-    //   }
-    //   range.push(number_a);
-    //   iterator = iterator + 2; 
-    // }
-   iterator = 5;
-    //  while ( iterator !=  0){
-    //   if (  number_a % 2 == 0 ){
-    //     range.push(number_a);
-    //   }
-    //   number_a = number_a - 2;
-    //   iterator--;
-    // }
-    return range;
-
+  let min = Math.min(number_a,number_b);
+  let max = Math.max(number_a,number_b);
+  let length = Math.ceil(( max - min )  / 2 );
+ 
+  if ( number_a < number_b) {
+    return Array.from({length}, (v, index) => (index + 1) * 2); 
+  }
+  else
+     return Array.from({length}, (v, index) =>  (index * -2) + max );
 }
 
 module.exports = get_integer_interval_2;
